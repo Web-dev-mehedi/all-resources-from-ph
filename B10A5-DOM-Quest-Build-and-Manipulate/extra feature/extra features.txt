@@ -1,0 +1,13 @@
+extra features
+
+// function for outPut Showing On type
+function addInputToOut(id){
+    document.getElementById(id).addEventListener('keyup', function(){
+         setOutputValueById('outPutValue').innerText = getInputValueById('input1');
+         setOutputValueById('outPutValue1').innerText = getInputValueById('input2');
+         setOutputValueById('outPutValue2').innerText = getInputValueById('input3');
+    })
+}
+addInputToOut('input1');
+addInputToOut('input2');
+addInputToOut('input3');
